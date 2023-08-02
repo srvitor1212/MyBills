@@ -1,6 +1,6 @@
 ﻿namespace InfraData.Model
 {
-    public class Entrada
+    public class Entrada : Base
     {
         public string Nome { get; set; }
         public double Valor { get; set; }
