@@ -10,4 +10,8 @@
     <ProjectReference Include="..\InfraData\InfraData.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\MinhasContas\" />
+  </ItemGroup>
+
 </Project>

@@ -1,14 +1,21 @@
-﻿@page "/MinhasContas/Adicionar"
+﻿@page "/Entradas/Adicionar"
 
 
 @using InfraData.Model
 
 
-<h1>Em construção</h1>
+<PageTitle>@Title</PageTitle>
+
+
+<h1>@Title</h1>
 
 
 <Form ButtonText="Criar Entrada" entrada="@entrada"/>
 
 @code {
+    string Title = "Registrar Entradas";
+
     Entrada entrada = new Entrada();
+
+
 }
