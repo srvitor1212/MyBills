@@ -1,6 +1,8 @@
 ﻿@using InfraData.Model
 
 <EditForm Model="@entrada" OnInvalidSubmit="@OnValidSubmit">
+
+    <FluentValidator TValidator="PersonValidator" /> //todo: ver oque é isso e fazer
     <div class="form-group">
         <label>Nome :</label>
         <div>
