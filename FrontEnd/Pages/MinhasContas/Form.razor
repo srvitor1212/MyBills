@@ -1,0 +1,15 @@
+﻿@using InfraData.Model
+
+<EditForm Model="@entrada">
+    <div class="form-group">
+        <label>Nome :</label>
+        <div>
+            <InputText @bind-Value="@entrada.Nome" class="form-control col-sm-3" />
+            <ValidationMessage For="@(() => entrada.Nome)" />
+        </div>
+    </div>
+</EditForm>
+
+@code{
+    public Entrada entrada { get; set; }
+}
