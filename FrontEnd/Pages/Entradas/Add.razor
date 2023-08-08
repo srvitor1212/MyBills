@@ -12,5 +12,11 @@
 @code {
     string Title = "Registrar Entradas";
 
-    Entrada entrada = new Entrada();
+    Entrada entrada = new Entrada
+    {
+        Nome = "",
+        Valor = 0,
+        DataInicio = DateTime.UtcNow,
+        DataFim = DateTime.UtcNow
+    };
 }
