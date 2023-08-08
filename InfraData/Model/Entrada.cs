@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Shared.Model
+namespace SharedProject.Model
 {
     public class Entrada : Base
     {

@@ -1,5 +1,5 @@
 using FrontEnd.Data;
-using InfraData.Dependency;
+using SharedProject.Dependency;
 
 var builder = WebApplication.CreateBuilder(args);
 

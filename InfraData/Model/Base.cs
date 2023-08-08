@@ -1,4 +1,4 @@
-﻿namespace Shared.Model
+﻿namespace SharedProject.Model
 {
     public class Base
     {

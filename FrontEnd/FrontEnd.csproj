@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InfraData\Shared.csproj" />
+    <ProjectReference Include="..\InfraData\SharedProject.csproj" />
   </ItemGroup>
 
   <ItemGroup>
