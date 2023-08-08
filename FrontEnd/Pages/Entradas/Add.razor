@@ -1,0 +1,22 @@
+﻿@page "/Entradas/Adicionar"
+
+
+<PageTitle>@Title</PageTitle>
+
+
+<h1>@Title</h1>
+
+
+<Form ButtonText="Criar Entrada" entrada="@entrada"/>
+
+@code {
+    string Title = "Registrar Entradas";
+
+    Entrada entrada = new Entrada
+    {
+        Nome = "",
+        Valor = 0,
+        DataInicio = DateTime.UtcNow,
+        DataFim = DateTime.UtcNow
+    };
+}

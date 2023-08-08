@@ -1,9 +1,9 @@
-﻿namespace InfraData.Model
+﻿namespace SharedProject.Model
 {
     public class Base
     {
         public Guid Id { get; set; } = Guid.NewGuid();
-        public DateTime DataCriacao { get; set; }
-        public DateTime DataAlteracao { get; set; }
+        public DateTime DataCriacaoRegistro { get; set; }
+        public DateTime DataAlteracaoRegistro { get; set; }
     }
 }

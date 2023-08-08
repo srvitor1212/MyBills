@@ -1,0 +1,49 @@
+﻿
+
+<EditForm 
+    Model="@entrada" 
+    OnValidSubmit="@OnValidSubmit">
+
+    <div class="form-group">
+        <label>Nome :</label>
+        <div>
+            <InputText @bind-Value="@entrada.Nome" class="form-control col-sm-3" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Valor :</label>
+        <div>
+            <InputNumber @bind-Value="@entrada.Valor" class="form-control col-sm-3" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Inicio :</label>
+        <div>
+            <InputDate @bind-Value="@entrada.DataInicio" class="form-control col-sm-3" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Fim :</label>
+        <div>
+            <InputDate @bind-Value="@entrada.DataFim" class="form-control col-sm-3" />
+        </div>
+    </div>
+
+    <div>
+        <hr />
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="form-group">
+            <button class="btn btn-primary">@ButtonText</button>
+        </div>
+    </div>
+</EditForm>
+
+@code{
+    [Parameter]
+    public Entrada entrada { get; set; }
+    [Parameter]
+    public string ButtonText { get; set; }
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+}

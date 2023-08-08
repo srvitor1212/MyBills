@@ -1,0 +1,20 @@
+﻿@page "/Entradas/Index"
+
+
+<PageTitle>@Title</PageTitle>
+
+
+<h1>@Title</h1>
+<p>Anote aqui seu salário mensal e/ou valores recebidos.</p>
+<br/>
+<div class="col-md-7">
+    <NavLink href="/Entradas/Adicionar"
+        class="btn btn-sm btn-success mb-2">
+        Adicionar
+    </NavLink>
+</div>
+
+
+@code{
+    string Title = "Entradas";
+}

@@ -1,9 +1,9 @@
-﻿using InfraData.Context;
+﻿using SharedProject.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace InfraData.Dependency
+namespace SharedProject.Dependency
 {
     public static class DependencyInjection
     {

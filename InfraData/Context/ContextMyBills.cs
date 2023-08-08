@@ -1,8 +1,8 @@
-﻿using InfraData.Model;
+﻿using SharedProject.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace InfraData.Context
+namespace SharedProject.Context
 {
     public class ContextMyBills : DbContext
     {
