@@ -14,8 +14,4 @@
     <Folder Include="Pages\MinhasContas\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.6.0" />
-  </ItemGroup>
-
 </Project>
