@@ -1,15 +1,20 @@
 ﻿@using InfraData.Model
 
-<EditForm Model="@entrada">
+<EditForm Model="@entrada" OnInvalidSubmit="@OnValidSubmit">
     <div class="form-group">
         <label>Nome :</label>
         <div>
             <InputText @bind-Value="@entrada.Nome" class="form-control col-sm-3" />
-            <ValidationMessage For="@(() => entrada.Nome)" />
+            @*<ValidationMessage For="@(() => entrada.Nome)" />*@
         </div>
     </div>
 </EditForm>
 
 @code{
+    [Parameter]
     public Entrada entrada { get; set; }
+    [Parameter]
+    public string ButtonText { get; set; } = "Salvar";
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
 }
