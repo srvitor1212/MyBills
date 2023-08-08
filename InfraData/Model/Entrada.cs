@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace InfraData.Model
+namespace Shared.Model
 {
     public class Entrada : Base
     {

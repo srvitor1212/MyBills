@@ -1,4 +1,4 @@
-﻿namespace InfraData.Model
+﻿namespace Shared.Model
 {
     public class Base
     {

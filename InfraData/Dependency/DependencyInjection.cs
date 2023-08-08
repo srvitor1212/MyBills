@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace InfraData.Dependency
+namespace Shared.Dependency
 {
     public static class DependencyInjection
     {

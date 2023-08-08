@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace InfraData.Context
+namespace Shared.Context
 {
     public class ContextMyBills : DbContext
     {
