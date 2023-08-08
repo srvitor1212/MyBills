@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{1C873EAA-A5CD-4AF4-9D1D-4FF66D124EF8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfraData", "InfraData\InfraData.csproj", "{53152B3E-4673-4574-8729-443A42937643}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "InfraData\Shared.csproj", "{53152B3E-4673-4574-8729-443A42937643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
