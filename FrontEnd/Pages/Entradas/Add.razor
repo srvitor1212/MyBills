@@ -9,14 +9,32 @@
 
 <Form ButtonText="Criar Entrada" entrada="@entrada"/>
 
+
 @code {
     string Title = "Registrar Entradas";
+    Entrada entrada = new Entrada();
 
-    Entrada entrada = new Entrada
+    public Add()
     {
-        Nome = "",
-        Valor = 0,
-        DataInicio = DateTime.UtcNow,
-        DataFim = DateTime.UtcNow
-    };
+        InicializarCampos();
+    }
+
+    private void InicializarCampos()
+    {
+        DateTime agora = DateTime.UtcNow;
+        DateTime dtInicio = new DateTime
+        (
+            year: agora.Year,
+            month: agora.Month,
+            day: 1
+        );
+        DateTime dtFim = new DateTime(
+            year: agora.Year,
+            month: agora.Month,
+            day: DateTime.DaysInMonth(agora.Year, agora.Month)
+        );
+
+        entrada.DataInicio = dtInicio;
+        entrada.DataFim = dtFim;
+    }
 }
